@@ -1,0 +1,160 @@
+body {
+  color: #212121;
+  background: url(../images/fondo.jfif) center center fixed;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  font-family: "Comfortaa", cursive;
+}
+#botonAñadir {
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: none;
+  background: none;
+  border-color: none;
+}
+#botonAñadir img {
+  width: 100%;
+}
+.fondo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.header {
+  height: 100px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__mushroom {
+  height: 30px;
+}
+.header__mushroom img {
+  height: 100%;
+}
+.header__titulo {
+  padding: 0px;
+  display: inline-block;
+  margin: 0;
+}
+/* .header__icono {
+  height: 80px;
+  padding: 10px;
+} */
+.list-group-item {
+  background: rgba(255, 249, 196, 0.8);
+  width: 100%;
+}
+.modal {
+  margin-top: 10vh;
+}
+#pantallaDetalle {
+  display: none;
+  text-align: center;
+}
+.pantallaDetalle {
+  position: relative;
+  background: rgba(0, 0, 0, 0.8);
+  width: 300px;
+  min-height: 350px;
+  border-radius: 5%;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  color: rgb(231, 231, 231);
+}
+#pantallaDetalle__cerrar {
+  width: 40px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-style: none;
+  background: 0%;
+}
+.pantallaDetalle_cerrar {
+  width: 40px;
+}
+.pantallaDetalle__icono {
+  width: 55px;
+}
+#pantallaDetalle__producto {
+  margin-top: 20px;
+}
+#pantallaDetalle__info {
+  font-size: 20px;
+}
+#pantallaListado {
+  display: none;
+  width: 100%;
+}
+#pantallaListado__lista {
+  font-size: 20px;
+  font-weight: bold;
+}
+.pantallaListado__flechaDerecha {
+  height: 20px;
+}
+#pantallaVacio {
+  *display: none;
+}
+.pantallaVacio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pantallaVacio__card {
+  background: rgba(0, 0, 0, 0.8);
+  width: 300px;
+  min-height: 350px;
+  border-radius: 5%;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  color: rgb(231, 231, 231);
+}
+
+#pantallaVacio {
+  text-align: center;
+}
+.pantallaVacio__emoji {
+  height: 150px;
+}
+.pantallaListado__icono {
+  height: 55px;
+  margin-right: 20px;
+}
+
+/* MEDIAQUERIES */
+@media only screen and (min-width: 768px) {
+  body {
+    background: url(../images/fondopc.png) center center fixed;
+    background-size: cover;
+  }
+  .pantallaVacio__card {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+  }
+  #pantallaVacio {
+    width: 50%;
+  }
+  .pantallaDetalle {
+    position: relative;
+  }
+  #pantallaDetalle__cerrar {
+    width: 40px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-style: none;
+    background: 0%;
+  }
+}
